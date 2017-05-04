@@ -1,0 +1,32 @@
+@import "_mixins";
+
+@include font-face(Roboto-Thin, '../../fonts/Roboto-Thin');
+@include font-face(Roboto-Light, '../../fonts/Roboto-Light');
+@include font-face(Roboto-Regular, '../../fonts/Roboto-Regular');
+@include font-face(Roboto-Medium, '../../fonts/Roboto-Medium');
+@include font-face(Roboto-Bold, '../../fonts/Roboto-Bold');
+
+body{
+	font-family: 'Roboto-Regular', sans-serif;
+}
+.container{
+	display: -webkit-flex;
+	display: flex;
+    flex-direction: row;
+	header {
+	  	width: 30%;
+	  	margin-right: 5%;
+	  	.panel{
+	  		width: 30%;
+	  		position: fixed;
+	  		.image-profile{
+	  			margin: auto;
+	  			display: block;
+	  		}
+	  	}
+	}
+	section{
+		width: 65%;
+		background-color: green;
+	}
+}
