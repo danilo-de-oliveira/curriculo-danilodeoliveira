@@ -8,9 +8,9 @@
 
 * { margin:0;
 	padding:0;
-	list-style:none;
+	// list-style:none;
 	vertical-align:baseline;
-	font-weight: normal;
+	// font-weight: normal;
 }
 
 body{
@@ -18,6 +18,9 @@ body{
 	font-size: 16px;
 	color: #263238;
 	line-height: 1.8em;
+	@media only screen and (max-width : 768px) {
+		font-size: 14px;
+    }
 }
 
 .container{
@@ -25,14 +28,23 @@ body{
 	display: flex;
     flex-direction: row;
     margin-top: 15px;
+    @media only screen and (max-width : 768px) {
+		display: block;
+    }
 	aside {
 	  	width: 35%;
-	  	// margin-right: 5%;
+		@media only screen and (max-width : 768px) {
+			width: 100%;
+	    }
 	  	.panel{
 	  		width: 35%;
 	  		position: fixed;
 	  		text-align: center;
 	  		font-size: 1.2em;
+	  		@media only screen and (max-width : 768px) {
+				position: relative;
+				width: 100%;
+		    }
 	  		h1{
 	  			font-size:1.8em;
 	  			margin-bottom: 10px;
@@ -40,8 +52,12 @@ body{
 	  		.image-profile{
 	  			margin: auto;
 	  			display: block;
-	  			max-width: 55%;
+	  			max-width: 50%;
 	  			margin-bottom: 20px;
+	  			@media only screen and (max-width : 768px) {
+					max-width: 250px;
+					width: 45%;
+			    }
 	  		}
 	  		.social-networks{
 	  			font-size: 2em;
@@ -55,6 +71,9 @@ body{
 	}
 	section{
 		width: 65%;
+		@media only screen and (max-width : 768px) {
+			width: 100%;
+	    }
 		.itens{
 			width: 90%;
 			margin: auto;
@@ -67,10 +86,17 @@ body{
 			    // border-left: 1px solid #E3F2FD;
 			    border-left: 1px solid #E0F2F1;
 				padding: 10px 0;
+				margin-bottom: 30px;
 				.description{
 					padding: 0 15px;
 					margin-top: 10px;
 					line-height: 1.5em;
+					.list-item{
+						margin-bottom:20px;
+						ul{
+							padding-left: 20px;
+						}
+					}
 				}
 				&:hover{
 					// border-color: #2196F3;
