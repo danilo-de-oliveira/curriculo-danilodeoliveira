@@ -1,10 +1,10 @@
 @import "_mixins";
 
-@include font-face(Roboto-Thin, '../../fonts/Roboto-Thin');
-@include font-face(Roboto-Light, '../../fonts/Roboto-Light');
-@include font-face(Roboto-Regular, '../../fonts/Roboto-Regular');
-@include font-face(Roboto-Medium, '../../fonts/Roboto-Medium');
-@include font-face(Roboto-Bold, '../../fonts/Roboto-Bold');
+@include font-face(Roboto-Thin, '../fonts/Roboto-Thin');
+@include font-face(Roboto-Light, '../fonts/Roboto-Light');
+@include font-face(Roboto-Regular, '../fonts/Roboto-Regular');
+@include font-face(Roboto-Medium, '../fonts/Roboto-Medium');
+@include font-face(Roboto-Bold, '../fonts/Roboto-Bold');
 
 * { margin:0;
 	padding:0;
