@@ -27,7 +27,7 @@ body{
 	/* display: -webkit-flex;
 	display: flex;
     flex-direction: row; */
-    display: table;
+    // display: table;
     margin-top: 15px;
     /* @media only screen and (max-width : 768px) {
 		display: block;
@@ -65,10 +65,6 @@ body{
 	  		.social-networks{
 	  			font-size: 2em;
 	  			margin-top: 10px;
-	  			a:hover{
-	  				// color: #2196F3;
-	  				color: #2c82c7;
-	  			}
 	  		}
 	  	}
 	}
@@ -118,9 +114,14 @@ body{
 		}
 	}
 }
-
+footer{
+	text-align: center;
+	font-size: 2em;
+}
 a{
 	text-decoration:none;
 	color: #607D8B;
-	// color: #009688;
+	&:hover{
+		color: #2c82c7;	
+	}
 }
