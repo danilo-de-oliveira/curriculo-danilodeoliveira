@@ -93,11 +93,11 @@ body{
 					padding: 0 15px;
 					margin-top: 10px;
 					line-height: 1.5em;
+					ul{
+						padding-left: 20px;
+					}
 					.list-item{
 						margin-bottom:20px;
-						ul{
-							padding-left: 20px;
-						}
 						.projects-description{
 							border-left: 5px solid #E0F2F1;
 							margin-top: 10px;
